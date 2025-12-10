@@ -4,21 +4,57 @@ import {Navbar} from '../../components';
 import {frenchWords} from '../../../public/dictionnary/fr';
 import {useState} from 'react';
 
+function countLetters(str: string) {
+    const map: Record<string, number> = {};
+    for (let char of str.toLowerCase()) {
+        map[char] = (map[char] || 0) + 1;
+    }
+    return map;
+}
+
 export default function ScrabbleHelper() {
     const [count, setCount] = useState(0); //Incrementeur test
 
-    const [letters, setLetters] = useState("");
-    const [length, setLength] = useState(""); 
-    const [result, setResult] = useState<string[]>([]);
+    const [letters, setLetters] = useState(""); //Input des lettres
+    const [length, setLength] = useState(""); //Input de la longueur
+    const [result, setResult] = useState<string[]>([]); //resultat
 
     const handleSubmit = () => {
-        console.log("Lettres entrées : ", letters);
+        // if (letters.length  != 0)
+        //     console.log("Lettres entrées : ", letters);
+        // if (length != "")
+        //     console.log("Longueur entrée : ", length);
+        // Handle letters
+        const lettersLow = letters.toLowerCase(); 
         const n = parseInt(length);
-        if (isNaN(n) || n <= 0) {
-            alert("Veuillez rentrer un nombre valide!");
-        }
+        // console.log("n =", n);
+
+        const filteredW = frenchWords.filter((word) => { //tableau des mots filtres
+            if (n)
+                if (word.length !== n) //si la longueur correspond pas -> faux
+                    return false;
+
+            const countInput = countLetters(lettersLow); // eel -> {e:2, l:1}
+            const countWord = countLetters(word); //elle -> {e:2, l:2}
+
+            for (let char in countInput) {
+                if (!countWord[char] || countWord[char] < countInput[char]) {
+                    return false;
+                }
+            }
+            // for (let char of available.toLowerCase()) {
+            //     if (!word.toLowerCase().includes(char))
+            //         return false;
+            // }
+            return true;
+        })
+
+        // Handle length only
         const filtered = frenchWords.filter((word) => word.length === n);
-        setResult(filtered);
+        if (letters.length != 0)
+            setResult(filteredW);
+        else
+            setResult(filtered);
     };
 
     console.log("Mots dans le dictionnaire fr: ", frenchWords.length);
