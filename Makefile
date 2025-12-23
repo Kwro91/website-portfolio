@@ -36,6 +36,7 @@ log:
 
 dev:
 	cd ./requirement/portfolio && npm install
+	cd ./requirement/portfolio && npm install three @react-three/fiber@8 @react-three/drei@9
 	cd ./requirement/portfolio && npm run dev
 	docker compose -f $(COMPOSE_PATH) up -d
 

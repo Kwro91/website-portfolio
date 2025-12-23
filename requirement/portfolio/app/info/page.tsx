@@ -12,7 +12,7 @@ export default function Info() {
 
         <p className="infoText">Étudiant à l'école 42 Paris.</p>
         <a href="https://42.fr/">
-            <img src="/42_Logo.png" alt="Logo 42" className="infoLogo" />
+            <img src="/images/42_Logo.png" alt="Logo 42" className="infoLogo" />
         </a>
         <p className="infoText">Retrouvez mon CV ici-dessous :</p>
 
