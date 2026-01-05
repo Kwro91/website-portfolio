@@ -10,7 +10,7 @@ D3DAD9 Cream
 */
 
 .example {
-  @apply px-16 py-4 bg-green-500 text-white rounded hover:bg-green-700 transition;
+  @apply px-10 py-4 bg-blue-500 text-white rounded hover:bg-blue-700 transition mx-2;
 }
 
 .navTitle {

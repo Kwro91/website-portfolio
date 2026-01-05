@@ -17,10 +17,16 @@ export default function Projects() {
                 <h1>Mes projets</h1>
                 <p>Voici une liste de mes projets.</p>
                 <Link href="/projects/scrabbleHelper">
-                    <button className='example'>Aller au Scrabble Helper</button>
+                    <button className='example'>Scrabble Helper</button>
                 </Link>
-                <Link href="/projects/model3d">
+                {/* <Link href="/projects/model3d">
                     <button className='example'>Aller à la Modélisation 3D</button>
+                </Link> */}
+                <Link href="/projects/cub3d">
+                    <button className='example'>Cub3D</button>
+                </Link>
+                <Link href="/projects/transcendence">
+                    <button className='example'>Transcendence</button>
                 </Link>
             </div>
             <BottomBar />
