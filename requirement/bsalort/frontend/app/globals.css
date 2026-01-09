@@ -146,16 +146,20 @@ a, button {
 
 /* Page Projet */
 
+.projetHeader {
+  @apply flex flex-col items-center text-center space-y-4;
+}
+
 .projetBtnDiv {
-  @apply flex flex-col py-5 border border-red-500 justify-start space-y-10;
+  @apply flex flex-col py-5 border border-red-500 items-center space-y-10;
 }
 
 .projetGenDesc {
-  @apply flex border border-green-500 items-center space-x-10 justify-start justify-around;
+  @apply bg-gray-900 py-2 px-2 flex border border-green-500 items-center space-x-10 justify-start justify-around;
 }
 
 .projetDesc {
-  @apply border border-cyan-400 flex flex-col items-center space-y-4 w-64;
+  @apply border border-cyan-400 bg-gray-800 rounded px-2 py-2 flex flex-col items-center space-y-4 w-64 justify-start;
 }
 
 .projetImg {
@@ -167,10 +171,23 @@ a, button {
 }
 
 .projetBtn {
-  @apply rounded bg-gray-300 text-black text-xl font-bold hover:bg-gray-400;
+  @apply px-2 py-2 border-gray-500 border-b-4 rounded bg-gray-300 text-black text-xl font-bold hover:bg-gray-400;
 }
 
+.logo {
+  @apply self-start rounded-full bg-white w-10 h-10 flex items-center ;
+}
 
+.projetFooter {
+  @apply flex flex-col items-center bg-gray-800 py-5 px-2 space-y-5 w-60 justify-center border border-yellow-500;
+}
+
+.projectFooterBtn {
+  @apply basicP underline bg-white rounded-full py-2 px-2 w-20 h-20
+}
+.projectFooterBtn:hover {
+  transform: scale(1.2);
+}
 
 /* /////////////////////////////////////////////////////////////////////////////////////// */
 

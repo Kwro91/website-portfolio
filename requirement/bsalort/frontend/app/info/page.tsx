@@ -1,11 +1,7 @@
-"use client";
-import {Navbar} from '../components';
-import {BottomBar} from '../components';
 
 export default function Info() {
   return (
     <main className="infoPage">
-      <Navbar />
 
       <div className="infoContainer">
         <h1 className="infoTitle">Informations personnelles</h1>
@@ -40,7 +36,6 @@ export default function Info() {
         </div>
       </div>
 
-      <BottomBar />
     </main>
   );
 }

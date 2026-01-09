@@ -1,6 +1,5 @@
 "use client";
 // app/projects/scrabbleHelper/page.tsx
-import {Navbar} from '../../components';
 import {frenchWords} from '../../../public/dictionnary/fr';
 import {useState} from 'react';
 

@@ -1,7 +1,5 @@
 "use client";
 // // import { OrbitControls } from "@react-three/drei";
-import { Navbar } from "../../components";
-import { BottomBar } from "../../components";
 // import { Model3d } from "../../components/";
 // // import { ModelAtari } from "../../components/";
 
@@ -11,7 +9,6 @@ import { BottomBar } from "../../components";
 export default function model3d() {
     return (
         <main>
-//             <Navbar />
 //             <div>
 //                 <h1>Modélisation 3D</h1>
 //                 <p>3d realise avec react three fiber</p>
@@ -22,7 +19,6 @@ export default function model3d() {
 //                 <p>Modele Atari Monitor recupere sur poly.cam (par spypixel)</p>
 //                 <ModelAtari />
 //             </div> */}
-//             <BottomBar />
 //         </main>
     );
 }
