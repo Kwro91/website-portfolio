@@ -61,7 +61,6 @@ export default function ScrabbleHelper() {
 
     return (
         <main>
-            <Navbar />
             <div>
                 <h1>Test bouton incrementeur</h1>
                 <p>Compteur : {count}</p>

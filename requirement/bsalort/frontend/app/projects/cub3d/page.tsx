@@ -4,7 +4,6 @@ import {BottomBar} from '../../components';
 export default function Cub3d() {
     return (
         <div>
-            <Navbar />
             <main className="flex min-h-screen flex-col items-center justify-between p-24">
                 <h1 className="text-4xl font-bold mb-8">Cub3D</h1>
                 <p>Cub3D est le premier projet visuel de groupe du cursus 42.</p>
@@ -21,7 +20,6 @@ export default function Cub3d() {
                 <img src="/images/cub3d/WrongMap.png" alt="Game Picture" />
                 <p>Evidemment, ce projet a ete realise en respectant les normes de codage de l'ecole 42 et ne presente aucun leak de donnees.</p>
             </main>
-            <BottomBar />
         </div>
     );
 }

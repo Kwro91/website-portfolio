@@ -4,7 +4,6 @@ import { BottomBar } from "../../components";
 export default function Transcendence() {
     return (
         <div>
-            <Navbar />
             <main className="flex min-h-screen flex-col items-center justify-between p-24">
                 <h1 className="text-4xl font-bold mb-8">Transcendence</h1>
                 <p>Transcendence est un projet de creation d'un jeu multijoueur en temps reel inspiré du célèbre jeu Pong.</p>
@@ -65,7 +64,6 @@ export default function Transcendence() {
                 </div>
 
             </main>
-            <BottomBar />
         </div>
     );
 }

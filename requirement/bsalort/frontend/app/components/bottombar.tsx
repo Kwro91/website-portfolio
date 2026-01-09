@@ -13,7 +13,7 @@ export default function BottomBar() {
                     </a>
                 </button>
             </div>
-            <p>Site web realisé avec ❤︎ de 0 avec NextJS (React) + Tailwind-CSS + NestJS & hebergement personnel.</p>
+            <p>Site web realisé avec ❤︎ de 0 avec NextJS (React), TailwindCSS, NestJS & hébergement personnel.</p>
             <p>© 2026 Benjamin Salort. Tous droits réservés.</p>
         </footer>
     );
