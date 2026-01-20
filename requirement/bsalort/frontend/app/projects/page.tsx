@@ -27,26 +27,35 @@ export default function Projects() {
                                 <Link href="/projects/cub3d">
                                     <button className='projetBtn'>Cub3D</button>
                                 </Link>
-                                <p className='basicP'>Reproduction d'un environnement 3D inspire de Wolfenstein3D uniquement avec du C et une librairie graphique.</p>
+                                <p className="basicP italic">Reproduction d'un environnement 3D inspire de Wolfenstein3D uniquement avec du C et une librairie graphique.</p>
                             </div>
                             <div className="projetDesc">
                                 <img className="projetImg" src="/images/cub3d/Game1.png" alt="Image environnement 3d, murs en brique bois et pierre"/>
-                                <p className="basicP">Langage :</p>
-                                <p>C</p>
+                                <div className="projetDescTextTitle">
+                                    <p className="basicP underline">Langage :</p>
+                                </div>
+                                <p className="basicP">C</p>
+                                <div className="projetDescTextTitle">
+                                    <p className="basicP underline">Librairie :</p>
+                                </div>
+                                <p className="basicP">Minilibx</p>
                             </div>
                         </div>
-                        <hr className="homeHr" />
+                        <hr className="homeHr xl:hidden" />
     {/* TRANSCENDENCE */}
                         <div className="projetGenDesc">
                             <div className="projetDesc">
                                 <img className="projetImg" src="/images/transcendence/Online/3-2.png" alt="Image versus de pong sur page web"/>
                                 <div>
-                                    <p className="basicP self-center">Langages :</p>
-                                    <p className="basicP self-start">NodeJs, TailwindCss, Fastify, SQL, Typescript</p>
+
+                                <div className="projetDescTextTitle">
+                                    <p className="basicP underline">Langages :</p>
                                 </div>
-                                <div>
-                                    <p className="basicP">Technologie :</p>
-                                    <p className="basicP self-start">Docker, Nginx</p>
+                                    <p className="basicP">NodeJs, TailwindCss, Fastify, SQL, Typescript</p>
+                                <div className="projetDescTextTitle">
+                                    <p className="basicP underline">Technologies :</p>
+                                </div>
+                                    <p className="basicP">Docker, Nginx</p>
                                 </div>
                             </div>
                             <div className="projetDesc">
@@ -56,7 +65,7 @@ export default function Projects() {
                                 <Link href="/projects/transcendence">
                                     <button className='projetBtn'>Transcendence</button>
                                 </Link>
-                                <p className="basicP">Single page application comprenant un systeme d'authentification securise et un jeu multijoueur Pong avec suivi des statistiques des joueurs.</p>
+                                <p className="basicP italic">Single page application comprenant un systeme d'authentification securise et un jeu multijoueur Pong avec suivi des statistiques des joueurs.</p>
                             </div>
                         </div>
                     </div>
@@ -68,11 +77,11 @@ export default function Projects() {
                         <div className="projetGenDesc">
                             <div className="projetDesc">
                                 <Link href="/projects/scrabbleHelper">
-                                    <button className='projetBtn'>Scrabble Helper</button>
+                                    <button className="projetBtn">Scrabble Helper</button>
                                 </Link>
-                                <p className="basicP">Mini projet web consistant a trouver dans un dictionnaire une liste de mot selon des criteres remplis par l'utilisateur.</p>
+                                <p className="basicP italic">Mini projet web consistant a trouver dans un dictionnaire une liste de mot selon des criteres remplis par l'utilisateur.</p>
                             </div>
-                            <div className="projetDesc"><img src="" alt="Image page Scrabble Helper" /></div>
+                            <div className="projetDesc"><img alt="Image page Scrabble Helper" /></div>
                         </div>
     {/* WEB MODELE 3D */}
                         {/* <Link href="/projects/model3d">
@@ -83,7 +92,7 @@ export default function Projects() {
                     <div className="projetFooter">
                         <p className="basicP">Ma page GitHub :</p>
                         <Link className="projectFooterBtn" href="https://github.com/besalort" target="_blank">
-                            <img src="/images/svg/git.svg" alt="icone lien github besalort" />
+                            <img className="projectFooterBtnImg" src="/images/svg/git.svg" alt="icone lien github besalort" />
                         </Link>
                     </div>
                 </div>

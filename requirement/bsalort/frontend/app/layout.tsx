@@ -20,14 +20,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className="h-full">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className="{poppins.className}">
-        <Navbar />
-        {children}
-        <BottomBar />
+      <body className={`h-full ${poppins.className}`}>
+        <div className="flex flex-col min-h-full">
+          <Navbar />
+          {children}
+          <BottomBar />
+        </div>
       </body>
     </html>
   )

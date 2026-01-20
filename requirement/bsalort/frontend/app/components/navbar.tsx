@@ -7,7 +7,7 @@ export function ContactButton() {
         <button className="navBtn">
             <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}`} className="flex items-center gap-2">
                 <img src="/images/svg/mail.svg" alt="" className="navSvgBtn"/>
-                Contactez moi
+                <p className="navTextDisappear">Contactez moi</p>
             </a>
         </button>
     );
@@ -25,13 +25,13 @@ export default function Navbar() {
             <Link href="/projects">
                 <button className="navBtn">
                     <img src="/images/svg/gitBranch1.svg" alt="" className="navSvgBtn"/>
-                    <p className="test">Projet</p>
+                    <p className="navTextDisappear">Projet</p>
                 </button>
             </Link>
             <Link href="/info">
                 <button className="navBtn">
                     <img src="/images/svg/info.svg" alt="" className="navSvgBtn"/>
-                    En savoir plus
+                    <p className="navTextDisappear">En savoir plus</p>
                 </button>
             </Link>
             <ContactButton />
