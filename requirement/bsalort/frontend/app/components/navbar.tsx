@@ -25,7 +25,7 @@ export default function Navbar() {
             <Link href="/projects">
                 <button className="navBtn">
                     <img src="/images/svg/gitBranch1.svg" alt="" className="navSvgBtn"/>
-                    Projets
+                    <p className="test">Projet</p>
                 </button>
             </Link>
             <Link href="/info">
