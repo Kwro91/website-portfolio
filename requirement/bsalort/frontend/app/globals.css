@@ -19,13 +19,37 @@ D3DAD9 Cream
 
 /* Nouvelle version */
 
+
+/* Effets */
+
+.fade-edges {
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 0%,
+    black 85%,
+    transparent
+  );
+}
+
+.effectHoverGlow {
+  @apply transition-shadow duration-300 hover:shadow-[0_0_30px_rgba(56,189,248,0.35)];
+}
+
+.effectGlassMorph {
+  @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-xl;
+}
+
+/* Pages */
+
+
 .allpage {
 	/* background: #0F172A; */
 	@apply text-zinc-200 min-h-screen;
 }
 
 body {
-  @apply text-zinc-200 min-h-screen py-20;
+  @apply text-zinc-200;
   background: #0F172A;
   cursor: url("/cursors/skyrim_pointer.cur"), auto;
 }
@@ -35,7 +59,7 @@ a, button {
 }
 
 .basicLink {
-  @apply font-bold text-sky-400 hover:text-sky-600 hover:underline;
+  @apply italic text-sky-400 hover:font-bold hover:text-sky-400 hover:text-zinc-200 hover:underline;
 }
 
 .basicH1 {
@@ -50,10 +74,13 @@ a, button {
   @apply text-lg text-zinc-200;
 }
 
+.basicCenter {
+  @apply flex items-center justify-center;
+}
 /* NavBar */
 
 .navBar {
-  @apply flex fixed top-0 left-0 w-full shadow-md;
+  @apply flex fixed top-0 w-full shadow-md;
   background-color: #1E293B;
 }
   
@@ -218,6 +245,52 @@ a, button {
 .projectFooterBtnImg:hover {
   transition: transform 0.2s; 
   transform: scale(1.2);
+}
+
+/* Presentations projets */
+
+.projetPresentationMain {
+  @apply flex flex-col items-stretch justify-center py-24;
+}
+
+.projetPresentationMainDiv {
+  @apply w-full rounded-b-xl py-8 px-10 bg-sky-700;
+}
+
+.projetPresentationDiv1 {
+  @apply w-full rounded-b-xl py-8 px-10 bg-blue-900;
+}
+
+.projetPresentationDiv2 {
+  @apply w-full rounded-b-xl py-8 px-10 bg-indigo-800;
+}
+
+.projetPresentationDiv3 {
+  @apply w-full rounded-b-xl py-8 px-10 bg-violet-950;
+}
+
+.projetPresentationDiv4 {
+  @apply w-full rounded-b-xl py-8 px-10 bg-purple-950;
+}
+
+.projetPresentationH1 {
+  @apply text-5xl underline text-blue-500 font-bold mb-8;
+}
+
+.projetPresentationH2 {
+  @apply text-3xl font-bold text-zinc-200 mb-4 italic;
+}
+
+.projetPresentationP {
+  @apply text-zinc-200 text-lg mb-4;
+}
+
+.projetPresentationDivImg {
+  @apply flex items-center justify-center py-2;
+}
+
+.projetPresentationImg {
+  @apply bg-black rounded object-contain w-[500px] h-[450px] flex transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////// */

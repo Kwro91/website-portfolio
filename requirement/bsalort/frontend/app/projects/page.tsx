@@ -10,7 +10,7 @@ export default function Projects() {
     };
 
     return (
-        <main>
+        <main className="py-24">
             <div>
                 <div className="projetHeader">
                     <h1 className="basicH1">Mes projets</h1>
@@ -25,7 +25,7 @@ export default function Projects() {
                                     <img className="w-8" src="/images/42_Logo.png" alt="" />
                                 </div>
                                 <Link href="/projects/cub3d">
-                                    <button className='projetBtn'>Cub3D</button>
+                                    <button className="projetBtn effectHoverGlow">Cub3D</button>
                                 </Link>
                                 <p className="basicP italic">Reproduction d'un environnement 3D inspire de Wolfenstein3D uniquement avec du C et une librairie graphique.</p>
                             </div>
@@ -63,7 +63,7 @@ export default function Projects() {
                                     <img className="w-8" src="/images/42_Logo.png" alt="" />
                                 </div>
                                 <Link href="/projects/transcendence">
-                                    <button className='projetBtn'>Transcendence</button>
+                                    <button className="projetBtn effectHoverGlow">Transcendence</button>
                                 </Link>
                                 <p className="basicP italic">Single page application comprenant un systeme d'authentification securise et un jeu multijoueur Pong avec suivi des statistiques des joueurs.</p>
                             </div>
@@ -77,7 +77,7 @@ export default function Projects() {
                         <div className="projetGenDesc">
                             <div className="projetDesc">
                                 <Link href="/projects/scrabbleHelper">
-                                    <button className="projetBtn">Scrabble Helper</button>
+                                    <button className="projetBtn effectHoverGlow">Scrabble Helper</button>
                                 </Link>
                                 <p className="basicP italic">Mini projet web consistant a trouver dans un dictionnaire une liste de mot selon des criteres remplis par l'utilisateur.</p>
                             </div>
