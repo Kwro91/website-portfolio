@@ -49,8 +49,9 @@ D3DAD9 Cream
 }
 
 body {
-  @apply text-zinc-200;
-  background: #0F172A;
+  @apply text-zinc-200 bg-no-repeat bg-fixed bg-gradient-to-b from-slate-700 to-slate-900;
+  /* background: #0F172A; */
+
   cursor: url("/cursors/skyrim_pointer.cur"), auto;
 }
 
@@ -250,23 +251,27 @@ a, button {
 /* Presentations projets */
 
 .projetPresentationMain {
-  @apply flex flex-col items-stretch justify-center py-24;
+  @apply flex flex-col items-stretch justify-center py-32 md:py-24 ;
 }
 
 .projetPresentationMainDiv {
-  @apply w-full rounded-b-xl py-8 px-10 bg-sky-700;
+  @apply w-full rounded-b-xl py-8 px-10 bg-gradient-to-b from-sky-500 to-blue-500;
 }
 
 .projetPresentationDiv1 {
-  @apply w-full rounded-b-xl py-8 px-10 bg-blue-900;
+  @apply w-full rounded-b-xl py-8 px-10 bg-gradient-to-b from-blue-500 to-indigo-700;
+}
+
+.projetPresentationDivBox1 {
+  @apply rounded-4xl bg-sky-700 py-4 px-4;
 }
 
 .projetPresentationDiv2 {
-  @apply w-full rounded-b-xl py-8 px-10 bg-indigo-800;
+  @apply w-full rounded-b-xl py-8 px-10 bg-gradient-to-b from-indigo-700 to-violet-800;
 }
 
 .projetPresentationDiv3 {
-  @apply w-full rounded-b-xl py-8 px-10 bg-violet-950;
+  @apply w-full rounded-b-xl py-8 px-10 bg-gradient-to-b from-violet-800 to-violet-950;
 }
 
 .projetPresentationDiv4 {
@@ -274,7 +279,8 @@ a, button {
 }
 
 .projetPresentationH1 {
-  @apply text-5xl underline text-blue-500 font-bold mb-8;
+  @apply text-5xl font-bold bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent;
+  /* @apply text-5xl underline text-blue-500 font-bold mb-8; */
 }
 
 .projetPresentationH2 {
@@ -290,9 +296,8 @@ a, button {
 }
 
 .projetPresentationImg {
-  @apply bg-black rounded object-contain w-[500px] h-[450px] flex transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl;
+  @apply bg-black rounded object-cover flex transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl;
 }
-
 /* /////////////////////////////////////////////////////////////////////////////////////// */
 
 /* .example {
