@@ -258,24 +258,48 @@ a, button {
   @apply w-full rounded-b-xl py-8 px-10 bg-gradient-to-b from-sky-500 to-blue-500;
 }
 
+.projetPresentationDivBox0 {
+  @apply rounded-4xl bg-sky-700 py-4 px-8;
+}
+
 .projetPresentationDiv1 {
-  @apply w-full rounded-b-xl py-8 px-10 bg-gradient-to-b from-blue-500 to-indigo-700;
+  @apply w-full rounded-b-xl py-12 px-8 bg-gradient-to-b from-blue-500 to-indigo-700;
 }
 
 .projetPresentationDivBox1 {
-  @apply rounded-4xl bg-sky-700 py-4 px-4;
+  @apply rounded-4xl bg-blue-900 py-4 px-8;
+}
+
+.projetPresentationDivHighlight1 {
+  @apply bg-blue-600 px-1;
 }
 
 .projetPresentationDiv2 {
   @apply w-full rounded-b-xl py-8 px-10 bg-gradient-to-b from-indigo-700 to-violet-800;
 }
 
+.projetPresentationDivBox2 {
+  @apply rounded-4xl bg-indigo-950 py-4 px-8;
+}
+
+.projetPresentationDivHighlight2 {
+  @apply bg-indigo-500 px-1;
+}
+
 .projetPresentationDiv3 {
-  @apply w-full rounded-b-xl py-8 px-10 bg-gradient-to-b from-violet-800 to-violet-950;
+  @apply w-full rounded-b-xl py-12 px-10 bg-gradient-to-b from-violet-800 to-violet-950;
+}
+
+.projetPresentationDivBox3 {
+  @apply rounded-4xl bg-purple-950 py-4 px-8;
+}
+
+.projetPresentationDivHighlight3 {
+  @apply bg-violet-600 px-1;
 }
 
 .projetPresentationDiv4 {
-  @apply w-full rounded-b-xl py-8 px-10 bg-purple-950;
+  @apply w-full rounded-b-xl py-12 px-10 bg-purple-950;
 }
 
 .projetPresentationH1 {
@@ -287,6 +311,10 @@ a, button {
   @apply text-3xl font-bold text-zinc-200 mb-4 italic;
 }
 
+.projetPresentationH3 {
+  @apply text-xl font-bold text-zinc-200 mb-4 underline;
+}
+
 .projetPresentationP {
   @apply text-zinc-200 text-lg mb-4;
 }
@@ -296,7 +324,11 @@ a, button {
 }
 
 .projetPresentationImg {
-  @apply bg-black rounded object-cover flex transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl;
+  @apply border bg-black rounded object-cover flex transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl;
+}
+
+.projetPresentationHr {
+  @apply mx-auto my-10 rounded border border-t-4 border-zinc-400 w-3/4;
 }
 /* /////////////////////////////////////////////////////////////////////////////////////// */
 
