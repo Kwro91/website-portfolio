@@ -1,31 +1,4 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
-
-export function SlideIn({ children }: { children: React.ReactNode }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.2 }
-    );
-
-    if (ref.current) observer.observe(ref.current);
-  }, []);
-
-  return (
-    <div ref={ref} className={`transition-all duration-900 ease-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-100"}`}>
-      {children}
-    </div>
-  );
-}
+import { SlideIn } from "../../components";
 
 export default function Cub3d() {
     return (
@@ -37,7 +10,7 @@ export default function Cub3d() {
 
               {/* PRESENTATION */}
               <SlideIn>
-              <div className="projetPresentationMainDiv fade-edges">
+              <div className="projetPresentationMainDiv effectFade-edges">
                 <div className="basicCenter">
                   <h2 className="projetPresentationH2">Présentation</h2>
                 </div>
@@ -72,7 +45,7 @@ export default function Cub3d() {
               </SlideIn>
               {/* VISUEL */}
               <SlideIn>
-              <div className="projetPresentationDiv1 fade-edges">
+              <div className="projetPresentationDiv1 effectFade-edges">
                 <div className="basicCenter">
                   <h2 className="projetPresentationH2">Le visuel</h2>
                 </div>
@@ -127,7 +100,7 @@ export default function Cub3d() {
               </SlideIn>
               {/* CONTROLES */}
               <SlideIn>
-              <div className="projetPresentationDiv2 fade-edges">
+              <div className="projetPresentationDiv2 effectFade-edges">
                 <div className="basicCenter">
                   <h2 className="projetPresentationH2">Les contrôles</h2>
                 </div>
@@ -145,7 +118,7 @@ export default function Cub3d() {
               </SlideIn>
               {/* MAP */}
               <SlideIn>
-              <div className="projetPresentationDiv3 fade-edges space-y-5">
+              <div className="projetPresentationDiv3 effectFade-edges space-y-5">
                 <div className="basicCenter">
                   <h2 className="projetPresentationH2">La map</h2>
                 </div>
@@ -186,7 +159,7 @@ export default function Cub3d() {
               </SlideIn>
               <div className="basicCenter">
                 <div className="max-lg:flex max-lg:justify-center max-lg:w-[550px]">
-                  <p className="projetPresentationP italic">Ce projet a été realisé en respectant les normes de codage de l'ecole 42 et ne présente aucun leak de données.</p>
+                  <p className="projetPresentationP italic">Ce projet a été realisé en respectant les normes de codage de l'école 42 et ne présente aucun leak de données.</p>
                 </div>
               </div>
             </main>

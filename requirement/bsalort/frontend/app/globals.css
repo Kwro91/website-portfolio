@@ -22,12 +22,12 @@ D3DAD9 Cream
 
 /* Effets */
 
-.fade-edges {
+.effectFade-edges {
   mask-image: linear-gradient(
     to bottom,
     transparent,
     black 0%,
-    black 85%,
+    black 90%,
     transparent
   );
 }
@@ -39,6 +39,23 @@ D3DAD9 Cream
 .effectGlassMorph {
   @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-xl;
 }
+
+
+@keyframes scroll-bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
+
+.scrollIndicator {
+  animation: scroll-bounce 1.5s ease-in-out infinite;
+}
+
 
 /* Pages */
 
@@ -81,8 +98,8 @@ a, button {
 /* NavBar */
 
 .navBar {
-  @apply flex fixed top-0 w-full shadow-md;
-  background-color: #1E293B;
+  @apply flex fixed top-0 w-full shadow-md bg-slate-800;
+  /* background-color: #1E293B; */
 }
   
 .navTitle {
@@ -135,23 +152,32 @@ a, button {
 
 /* HomePage */
 .homeHeader {
-  @apply flex flex-col items-center justify-center text-center py-20;
+  @apply flex flex-col min-h-screen justify-center;
 }
 
 .homeH1 {
-  @apply text-5xl font-bold text-zinc-200 py-5;
+  @apply md:text-5xl sm:text-4xl text-2xl font-bold text-white;
 }
 
+
 .homeH2 {
-  @apply text-4xl font-bold underline text-sky-300 py-5;
+  @apply text-4xl font-bold underline text-sky-300 max-lg:py-5;
+}
+
+.homeH3 {
+  @apply text-xl font-bold;
+}
+
+.homeH4 {
+  @apply text-lg;
 }
 
 .homeP {
-  @apply text-zinc-200 text-lg text-center;
+  @apply text-zinc-200 md:text-lg text-center text-balance mx-auto max-w-xl;
 }
 
 .homeDivIntro {
-  @apply flex flex-col space-y-1 py-5;
+  @apply flex flex-col space-y-3;
 }
 
 .homeButtons {
@@ -159,7 +185,7 @@ a, button {
 }
 
 .homeBtn {
-  @apply border border-zinc-500 border-b-4 rounded bg-zinc-300 text-black text-xl font-bold hover:bg-zinc-400 px-4 py-2 transition-transform;
+  @apply border border-zinc-500 border-b-4 rounded bg-white text-black text-xl font-bold hover:bg-zinc-400 px-4 py-2 transition-transform;
 }
 
 .homeBtn:hover {
@@ -167,23 +193,24 @@ a, button {
 }
 
 .homeDivDesc {
-  @apply flex max-md:flex-col items-center justify-center sm:px-10 sm:py-5 md:space-x-10;
+  @apply flex max-lg:flex-col lg:justify-center max-lg:space-y-15 sm:px-10 sm:py-5 md:space-x-10;
 }
 
 .homeSectionDiv {
-  @apply rounded bg-zinc-800 py-10 max-md:px-5 my-10 items-center justify-center;
+  @apply w-full rounded-4xl bg-slate-800 space-y-5 px-5 py-5 items-center justify-center;
 }
 
 .homeSection {
-  @apply flex flex-col items-center justify-center;
+  @apply flex flex-col items-center justify-center space-y-3;
+
 }
 
 .homeDlCvDiv {
-  @apply flex justify-center mt-6;
+  @apply flex mt-6;
 }
 
 .homeDlCvA {
-  @apply flex border border-b-10 border-zinc-500 text-black text-xl items-center bg-zinc-300 font-bold justify-center rounded px-2 hover:scale-90 hover:bg-zinc-400;
+  @apply flex border border-b-4 border-zinc-500 text-black text-xl items-center bg-white font-bold justify-center rounded px-2 hover:scale-90 hover:bg-zinc-400;
 }
 
 .homeHr {
@@ -255,7 +282,7 @@ a, button {
 }
 
 .projetPresentationMainDiv {
-  @apply w-full rounded-b-xl py-8 px-10 bg-gradient-to-b from-sky-500 to-blue-500;
+  @apply w-full rounded-b-xl py-20 px-10 bg-gradient-to-b from-sky-500 to-blue-500;
 }
 
 .projetPresentationDivBox0 {
@@ -263,7 +290,7 @@ a, button {
 }
 
 .projetPresentationDiv1 {
-  @apply w-full rounded-b-xl py-12 px-8 bg-gradient-to-b from-blue-500 to-indigo-700;
+  @apply w-full rounded-b-xl py-20 px-8 bg-gradient-to-b from-blue-500 to-indigo-700;
 }
 
 .projetPresentationDivBox1 {
@@ -275,7 +302,7 @@ a, button {
 }
 
 .projetPresentationDiv2 {
-  @apply w-full rounded-b-xl py-8 px-10 bg-gradient-to-b from-indigo-700 to-violet-800;
+  @apply w-full rounded-b-xl py-20 px-10 bg-gradient-to-b from-indigo-700 to-violet-800;
 }
 
 .projetPresentationDivBox2 {
@@ -287,7 +314,7 @@ a, button {
 }
 
 .projetPresentationDiv3 {
-  @apply w-full rounded-b-xl py-12 px-10 bg-gradient-to-b from-violet-800 to-violet-950;
+  @apply w-full rounded-b-xl py-25 px-10 bg-gradient-to-b from-violet-800 to-violet-950;
 }
 
 .projetPresentationDivBox3 {
@@ -315,6 +342,10 @@ a, button {
   @apply text-xl font-bold text-zinc-200 mb-4 underline;
 }
 
+.projetPresentationH4 {
+  @apply text-lg font-bold text-zinc-200 mb-4;
+}
+
 .projetPresentationP {
   @apply text-zinc-200 text-lg mb-4;
 }
@@ -328,8 +359,17 @@ a, button {
 }
 
 .projetPresentationHr {
-  @apply mx-auto my-10 rounded border border-t-4 border-zinc-400 w-3/4;
+  @apply mx-auto my-10 rounded border border-t-4 border-zinc-300 w-3/4;
 }
+
+.projetPresentationDivTech {
+  @apply rounded bg-sky-800 px-3 py-3 flex flex-col items-center space-y-3;
+}
+
+.projetPresentationUlTech {
+  @apply flex space-x-5 justify-between w-full shadow-md;
+}
+
 /* /////////////////////////////////////////////////////////////////////////////////////// */
 
 /* .example {
