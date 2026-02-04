@@ -75,6 +75,11 @@ export default function Home() {
         </div>
       </div>
       <hr className="homeHr" />
+      <div className="homeDivDesc">
+        <div className="basicCenter flex-col">
+          <img src="https://raw.githubusercontent.com/besalort/website-portfolio/output/github-contribution-grid-snake.svg" alt="" />
+        </div>
+      </div>
     </main>
   );
 }
