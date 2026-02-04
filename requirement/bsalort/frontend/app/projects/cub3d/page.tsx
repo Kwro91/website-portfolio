@@ -1,4 +1,5 @@
 import { SlideIn } from "../../components";
+import {ScrollDown} from '../../components';
 
 export default function Cub3d() {
     return (
@@ -9,7 +10,6 @@ export default function Cub3d() {
               </div>
 
               {/* PRESENTATION */}
-              <SlideIn>
               <div className="projetPresentationMainDiv effectFade-edges">
                 <div className="basicCenter">
                   <h2 className="projetPresentationH2">Présentation</h2>
@@ -42,8 +42,10 @@ export default function Cub3d() {
                   </div>
                 </div>
               </div>
-              </SlideIn>
               {/* VISUEL */}
+              <div className="basicCenter">
+                <ScrollDown />
+              </div>
               <SlideIn>
               <div className="projetPresentationDiv1 effectFade-edges">
                 <div className="basicCenter">

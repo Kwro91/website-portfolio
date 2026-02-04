@@ -1,11 +1,6 @@
 "use client"
 
-import {Navbar} from './components';
-import {BottomBar} from './components';
 import {ScrollDown} from './components'
-
-
-
 
 
 export default function Home() {
