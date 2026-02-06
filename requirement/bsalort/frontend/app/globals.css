@@ -107,7 +107,7 @@ a, button {
 }
   
 .navDivBtns {
-  @apply ml-auto flex py-3 min-md:space-x-4 px-2 space-x-10;
+  @apply ml-auto flex items-center justify-center py-3 min-md:space-x-4 px-2 space-x-10;
 }
 
 .navTextDisappear {
@@ -330,20 +330,20 @@ a, button {
 }
 
 .projetPresentationH1 {
-  @apply text-5xl font-bold bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent;
+  @apply text-center text-5xl font-bold bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent;
   /* @apply text-5xl underline text-blue-500 font-bold mb-8; */
 }
 
 .projetPresentationH2 {
-  @apply text-3xl font-bold text-zinc-200 mb-4 italic;
+  @apply text-center text-3xl font-bold text-zinc-200 mb-4 italic;
 }
 
 .projetPresentationH3 {
-  @apply text-xl font-bold text-zinc-200 mb-4 underline;
+  @apply text-center text-xl font-bold text-zinc-200 mb-4 underline;
 }
 
 .projetPresentationH4 {
-  @apply text-lg font-bold text-zinc-200 mb-4;
+  @apply text-center text-lg font-bold text-zinc-200 mb-4;
 }
 
 .projetPresentationP {

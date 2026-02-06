@@ -13,8 +13,8 @@ export default function BottomBar() {
                     </a>
                 </button>
             </div>
-            <p>Site web realisé avec ❤︎ avec NextJS (React), TailwindCSS, NestJS & hébergement personnel.</p>
-            <p>© 2026 Benjamin Salort. Tous droits réservés.</p>
+            <p className="text-center">Site web realisé avec ❤︎ avec NextJS (React), TailwindCSS, NestJS & hébergement personnel.</p>
+            <p className="text-center">© 2026 Benjamin Salort. Tous droits réservés.</p>
         </footer>
     );
 }

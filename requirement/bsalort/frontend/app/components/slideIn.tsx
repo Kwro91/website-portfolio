@@ -14,14 +14,14 @@ export default function SlideIn({ children }: { children: React.ReactNode }) {
           observer.disconnect();
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.10 }
     );
 
     if (ref.current) observer.observe(ref.current);
   }, []);
 
   return (
-    <div ref={ref} className={`transition-all duration-900 ease-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-100"}`}>
+    <div ref={ref} className={`py-15 transition-all duration-900 ease-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-100"}`}>
       {children}
     </div>
   );

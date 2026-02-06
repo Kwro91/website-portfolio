@@ -1,7 +1,7 @@
 // app/layout.tsx
 import './globals.css'
 import { Poppins } from 'next/font/google';
-import { Navbar, BottomBar } from './components';
+import { Navbar, BottomBar, ScrollTop } from './components';
 
 const poppins = Poppins ({
   weight: ['400', '500', '600','700'],
@@ -28,6 +28,7 @@ export default function RootLayout({
         <div className="flex flex-col">
           <Navbar />
             {children}
+            <ScrollTop />
           <BottomBar />
         </div>
       </body>
