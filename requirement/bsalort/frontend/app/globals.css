@@ -172,11 +172,11 @@ a, button {
 }
 
 .homeP {
-  @apply text-zinc-200 md:text-lg text-center text-balance mx-auto max-w-xl;
+  @apply text-zinc-200 md:text-lg;
 }
 
-.homeDivIntro {
-  @apply flex flex-col space-y-3;
+.homeDiv {
+  @apply flex flex-col space-y-3 bg-gray-900 shadow-sky-400 shadow-2xl border border-gray-500 px-10 py-20 rounded-4xl text-center h-95 w-150;
 }
 
 .homeButtons {
