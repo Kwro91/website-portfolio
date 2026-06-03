@@ -1,1 +1,12 @@
-{}
+{
+  "name": "website-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd ./requirement/bsalort/frontend && npm install && npm run dev",
+    "build": "cd ./requirement/bsalort/frontend && npm run build && cd ./requirement/bsalort/backend && npm run build",
+    "start": "docker compose -f requirement/bsalort/docker-compose.yml up -d",
+    "stop": "docker compose -f requirement/bsalort/docker-compose.yml stop",
+    "clean": "docker compose -f requirement/bsalort/docker-compose.yml down --rmi all --volumes --remove-orphans"
+  }
+}

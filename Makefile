@@ -3,13 +3,15 @@ FRONT_PATH=requirement/bsalort/frontend
 BACK_PATH=requirement/bsalort/backend
 
 all:
-	cd ./${FRONT_PATH} && npm install
-	cd .//${BACK_PATH} && npm install
-	cd ./${FRONT_PATH} && npm install @nestjs/core @nestjs/common @nestjs/platform-express rxjs reflect-metadata
-	cd .//${BACK_PATH} && npx nest build
-	cd .//${FRONT_PATH} && npm run build
+	cd ./${BACK_PATH} && npx nest build
+	cd ./${FRONT_PATH} && npm run build
 	docker compose -f ${COMPOSE_PATH} build --no-cache
 	docker compose -f $(COMPOSE_PATH) up -d
+
+install:
+	cd ./${FRONT_PATH} && npm install
+	cd ./${BACK_PATH} && npm install
+	cd ./${FRONT_PATH} && npm install @nestjs/core @nestjs/common @nestjs/platform-express rxjs reflect-metadata
 
 start:
 	docker compose -f $(COMPOSE_PATH) start
@@ -48,4 +50,4 @@ dev:
 	cd ./${FRONT_PATH} && npm run dev
 	docker compose -f $(COMPOSE_PATH) up -d
 
-.PHONY: all debug start stop clean fclean re destroy log dev
+.PHONY: all debug start stop clean fclean re destroy log dev install

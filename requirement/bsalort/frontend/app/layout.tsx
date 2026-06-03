@@ -25,10 +25,12 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={`h-full ${poppins.className}`}>
-        <div className="flex flex-col">
+        <div className="flex flex-col min-h-screen">
           <Navbar />
+          <main className="pt-16 flex-1">
             {children}
             <ScrollTop />
+          </main>
           <BottomBar />
         </div>
       </body>

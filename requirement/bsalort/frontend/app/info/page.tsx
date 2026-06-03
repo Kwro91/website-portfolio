@@ -7,10 +7,11 @@ export default function Info() {
         <h1 className="infoTitle">Informations personnelles</h1>
 
         <p className="infoText">Étudiant à l'école 42 Paris.</p>
-        <a href="https://42.fr/">
-            <img src="/images/42_Logo.png" alt="Logo 42" className="infoLogo" />
-        </a>
-        <p className="infoText">Retrouvez mon CV ici-dessous :</p>
+        <div className="w-42">
+          <a href="https://42.fr/">
+              <img src="/images/42_Logo.png" alt="Logo 42" className="infoLogo" />
+          </a>
+        </div>
 
         <div className="linksContainer">
           <a
@@ -31,9 +32,9 @@ export default function Info() {
           </a>
         </div>
 
-        <div className="cvContainer">
-          <iframe src="/CV/Canva/CV.pdf" className="cvFrame"></iframe>
-        </div>
+        {/* <div className="cvContainer"> */}
+          {/* <iframe src="/CV/Canva/CV.pdf" className="cvFrame"></iframe> */}
+        {/* </div> */}
       </div>
 
     </main>
